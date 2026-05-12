@@ -1,0 +1,9 @@
+services:
+  hello-pocketbase:
+    image: pocketbase
+    container_name: hello-pocketbase
+    volumes:
+      - /parent/folder/pb_data:/pb_data
+    ports:
+      - 8090:8090
+    restart: unless-stopped
